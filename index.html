@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BerfinCan</title>
-    
+
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
     <h1>Merhaba, BerfinCan.com'a Hoşgeldiniz.</h1>
 
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="img/e9165e32-1fef-4c66-acf6-5349d109cde2.jpg" alt="Resim 1" style="width: 100%; max-width: 600px;">
+                <img src="img/e6ecbab5-47ac-49ef-a5ce-a70c8a92905d.jpg" />
             </div>
             <div class="swiper-slide">
-                <img src="img/IMG_0143.JPG" alt="Resim 2" style="width: 100%; max-width: 600px;">
+                <img src="img/e9165e32-1fef-4c66-acf6-5349d109cde2.jpg" />
             </div>
             <div class="swiper-slide">
-                <img src="img/IMG_2815.jpg" alt="Resim 3" style="width: 100%; max-width: 600px;">
-            </div>
-             <div class="swiper-slide">
-                <img src="img/IMG_7965.JPG" alt="Resim 4" style="width: 100%; max-width: 600px;">
+                <img src="img/IMG_0143.JPG" />
             </div>
             <div class="swiper-slide">
-                <img src="img/e6ecbab5-47ac-49ef-a5ce-a70c8a92905d.jpg" alt="Resim 5" style="width: 100%; max-width: 600px;">
+                <img src="img/IMG_2815.jpg" />
             </div>
-            
+            <div class="swiper-slide">
+                <img src="img/IMG_7965.JPG" />
+            </div>
         </div>
-        
-        <!-- Eğer ileri ve geri butonları istiyorsan -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Eğer sayfa göstergeleri istiyorsan -->
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Swiper'ı başlatan JS kodu -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Config -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
             },
             pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+                el: ".swiper-pagination",
             },
         });
     </script>
 </body>
+
 </html>
