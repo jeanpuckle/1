@@ -47,6 +47,16 @@
   <img src="img/yipe-yippee.gif" width="300px" />
 </div>
 
+<audio id="bg-music" src="music.mp3" autoplay loop></audio>
+<script>
+  document.getElementById('bg-music').volume = 0.5;
+  window.addEventListener('click', function () {
+    const audio = document.getElementById('bg-music');
+    if (audio.paused) {
+      audio.play().catch(e => console.log("Audio error:", e));
+    }
+  }, { once: true });
+</script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
