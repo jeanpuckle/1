@@ -48,7 +48,7 @@
 </div>
     <audio id="bg-music" src="polatli.mp3" autoplay loop></audio>
 <script>
-  document.getElementById('bg-music').volume = 8.0;
+  document.getElementById('bg-music').volume = 4.0;
   window.addEventListener('click', function () {
     const audio = document.getElementById('bg-music');
     if (audio.paused) {
@@ -59,7 +59,7 @@
 
     <script>
   const audio = document.getElementById("bg-music");
-  audio.volume = 8.0;
+  audio.volume = 0.5;
 
   document.addEventListener("DOMContentLoaded", () => {
     audio.play().catch(err => {
