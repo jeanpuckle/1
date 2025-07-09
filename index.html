@@ -46,9 +46,9 @@
 <div style="text-align:center; margin-top: 20px;">
   <img src="img/yipe-yippee.gif" width="300px" />
 </div>
-    <audio id="bg-music" src="lazziya.mp3" autoplay loop></audio>
+    <audio id="bg-music" src="polatli.mp3" autoplay loop></audio>
 <script>
-  document.getElementById('bg-music').volume = 3.0;
+  document.getElementById('bg-music').volume = 8.0;
   window.addEventListener('click', function () {
     const audio = document.getElementById('bg-music');
     if (audio.paused) {
@@ -59,7 +59,7 @@
 
     <script>
   const audio = document.getElementById("bg-music");
-  audio.volume = 0.5;
+  audio.volume = 8.0;
 
   document.addEventListener("DOMContentLoaded", () => {
     audio.play().catch(err => {
